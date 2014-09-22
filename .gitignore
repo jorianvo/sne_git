@@ -25,3 +25,9 @@
 *.mtc1
 *.out
 *.synctex.gz
+
+# Add pdf because this can be easly build using the .tex files
+*.pdf
+
+# Add all temporary files added by Jorian's editor
+TSWLatexianTemp*.*
