@@ -1,0 +1,26 @@
+% We use report since it is similar to book just doesn't use a blank page after every chapter
+\documentclass[a4paper, 11pt]{report}
+
+\usepackage[english]{babel}
+\usepackage{fullpage}
+% For adding graphics/figures
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+% To make sure a figure is put where you specify use [H] option
+\usepackage{float}
+\begin{document}
+
+% Add separate titlepage
+\input{titlepage}
+
+% remove all numbering but still add to ToC
+\setcounter{secnumdepth}{-2}
+\tableofcontents
+
+% All content i.e. create a separate page in the chapters folder to include here
+% use \chapter{<chapter name>} to add a title, use \input{chapters/<chapter name>}
+\chapter{Week 36}
+\chapter{Week 37}
+\chapter{Week 38}
+
+\end{document}
