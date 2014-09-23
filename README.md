@@ -13,5 +13,5 @@ Containing:
 - [ ] At least one table/section (table should be cross referenced)
 - [ ] Show that you master LaTex by using: bold, italic, color
 - [x] Use VCS to keep track of the contributions
-- [ ] Create a very simple Makefile (manually) to compile and generate the final pdf
+- [x] Create a very simple Makefile (manually) to compile and generate the final pdf
 - [ ] Add link to the VCS repository to you wiki
