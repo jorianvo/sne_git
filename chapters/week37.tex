@@ -31,3 +31,30 @@ The three main solutions are explained in detail below:
 	  \item[Overkill] \hfill \\
 	As the name suggests, this is like doing to much work. You could threat every dependency as always out of date and thus always - even if nothing changed - rebuilt files with dependencies. This solution will fail in non-deterministic ways when make uses the parallel build option (-j).  
 	\end{description}
+	
+\section[Homework 3]{Homework 3: RegEx}
+In table \ref{table:regex} a few regular expressions tips and tricks I picked up from the Lea Verou talk about regular expressions are shown.
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ | c | c | }
+		\hline
+		\textbf{Regular expression} & \textbf{Description} \\
+		\hline
+		\verb|/<.+?>/g|&Capture XML tags\\ 
+		\hline
+		\verb|/c(?:ab|at)/g|&Ignore capturing groups\\ 
+		\hline
+		\verb|[.]|&In brackets most metacharacters will lose their special meaning.\\
+		& So this just means a literal "."\\
+		\hline
+		\verb|c(?=e)| & Look ahead, matches a "c" if followed by an "e"\\
+		\hline
+		\verb|/c(?![aeo])/g| & Negative look ahead, match a c if \textbf{not} \\
+		& followed by an "a", "e" or "o" \\
+		\hline
+		\end{tabular}
+	\end{center}
+	\caption{This table contains regular expression and their description.}
+	\label{table:regex}
+\end{table}
