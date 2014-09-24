@@ -5,21 +5,51 @@
 
 XUTools manipulate files in terms of language-specific constucts, like C functions, IOS interface blocks and XML elements.
 
+Traditional Unix Tools work on regular languages which don't work well with hierachical object models. Therefore the goal is to extend unix tools and the kind of languages they work on from regular languages to context-free languages.
+
 XUTools presents eXtended Unix text-processing tool (XUTools) that enable extracting, counting and comparing in terms of language-specific constructs. The XUTools use a library of language grammars and xupath which is an xpath-like querying language to perform its operations. The following tools are considered the XUTools:
 
 \begin{itemize}
-	\item xugrep
-	\item xuwc
-	\item xudiff
+	\item \textit{xugrep}
+	\item \textit{xuwc}
+	\item \textit{xudiff}
 \end{itemize}
 
+The goal is to extend more traditional unix tool into their extended form.
+
+The eXtended Tools are dicussed in the ordered as shown in the table below.
+
+\begin{tabular}
+1.&xugrep\\
+2.&xuwc\\
+3.&xudiff\\
+\end{tabular}
+
 \subsection{xugrep}
+
+Xugrep extracts text patterns in terms of higher-level-language constructs.
+
+underline{Use cases for xugrep:} \\
+
+\textbf{Network Configuration Management}: Extract all interface blocks from a router configuration file that have applied a certain access list\\
+\textbf{Developers}: Be able to grep for a function name as a function name\\
+\textbf{Security Analyst}: grep the XML feed of how many times a specific entry occurs relative to another value\\
+
+\textcolor{red}{The concept is shown in the figure below:}\\
 
 	\includegraphics[scale=0.5]{xugrep}
 
 \subsection{xuwc}
 
-Xuwc makes it possible to count text by understanding the structure for a specific language. So xuwc basically understands to language hierarchy in order to perform its job, which is counting. 
+Xuwc makes it possible to count text by understanding the structure for a specific language. So xuwc basically understands to language hierarchy in order to perform its job, which is counting.
+
+underline{Use cases for xuwc:} \\
+
+\textbf{Network Configuration Management}: Perform easy and quick longitudinal studies on their own configuration data\\
+\textbf{Developers}: Easily count the number of functions and lines per function\\
+\textbf{Security Analysts}: Easily count the number of paragraphs per section or subsection of a policy and show the changes of by using the counting\\
+
+\textcolor{red}{The concept is shown in the figure below:}\\
 
        \includegraphics[scale=0.5]{xuwc}
 
@@ -27,4 +57,13 @@ Xuwc makes it possible to count text by understanding the structure for a specif
 
 Xudiff compares two files in terms of higher-level-language constructs.
 
+underline{Use cases for xudiff:} \\
+
+\textbf{Network Configuration Management}: Capture the changes of configuration files to have a good overview of what changed\\
+\textbf{Developers}: Capture the changes of a functions different levels\\
+\textbf{Security Analyst}: Capture the changes of a section and subsection rather than per line\\
+
+\textcolor{red}{The concept is shown in the figure below:}\\
+
 	\includegraphics[scale=0.5]{xudiff}
+
