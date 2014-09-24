@@ -25,6 +25,7 @@
 *.mtc1
 *.out
 *.synctex.gz
+*.swp
 
 # Add pdf because this can be easly build using the .tex files
 *.pdf
